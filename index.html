@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Johan Chereau" />
+    <meta name="description" content="Fair trade music streaming platform for artists and music lovers, in the context of a student project.">
+    <title>FairMusic - Plateforme de streaming musical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="scripts/nav.js" defer></script>
+  </head>
+  <body>
+
+    <!-- ====== Header ====== -->
+    <header class="primary-header flex">
+      <div>
+        <a href="#" class="primary-header__logo uppercase"
+          >Fair<span class="text-accent">Music</span>
+        </a>
+      </div>
+
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Hamburger menu</span>
+        <svg
+          stroke="var(--clr-100)"
+          fill="none"
+          class="hamburger-menu"
+          viewBox="-10 -10 120 120"
+          width="250"
+        >
+          <path
+            class="line"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+          ></path>
+        </svg>
+      </button>
+
+      <!-- ====== Navbar ====== -->
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation flex remove-list-style"
+        >
+          <li><a class="primary-navigation-link" href="#discover-fair-music">Fonctionnalités</a></li>
+          <li><a class="primary-navigation-link" href="#offers-and-subscriptions">Abonnements</a></li>
+          <li><a class="primary-navigation-link" href="#desktop-download-call-to-action">Télécharger</a></li>
+          <li>
+            <a href="#" class="button background-primary login-btn">Connexion</a>
+          </li>
+          <li>
+            <a href="#" class="button border-accent sign-up-btn">Inscription</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ====== Hero section ====== -->
+      <section id="hero-section" class="hero-section">
+        <div class="container flex">
+          <div class="hero-section__text">
+            <h1>
+              Fair<span class="text-accent">Music</span>, de la musique pour
+              tous.
+            </h1>
+            <p>
+              La plateforme de streaming musical équitable pour tous les
+              amoureux de la musique, où passion rime avec rétribution
+              équitable.
+            </p>
+            <div class="hero-section__buttons">
+              <a href="#" class="button background-primary"
+                >Ouvrir le lecteur web</a
+              >
+              <a href="#" class="button border-accent">Télécharger</a>
+            </div>
+          </div>
+          <div class="hero-section__image">
+            <img
+              src="ressources/images/izernix_Man_listening_to_music_with_headphones_wearing_light_gr_a9cbd10b-48cc-44a2-b920-be80ef26280d-removebg.png"
+              alt="Un homme blond, souriant, avec un casque de musique vert et sans fil sur la tête, et portant un t-shirt vert"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== Discover FairMusic ====== -->
+      <section id="discover-fair-music">
+        <h2 class="section-title">Découvrez Fair<span class="text-accent">Music</span></h2>
+
+        <!-- ====== FairMusic Grid ====== -->
+        <div class="container grid fair-music-grid">
+          <div class="fair-music-grid__tile text-tile-1 background-700 flex">
+            <h3 class="fair-music-grid__title">
+              Pour tous les <span class="text-accent">amateurs</span> de
+              musique.
+            </h3>
+            <p class="fair-music-grid__description">
+              Plongez dans un univers sonore infini et découvrez une expérience
+              musicale inégalée sur FairMusic.
+            </p>
+          </div>
+
+          <div class="fair-music-grid__tile image-tile-1">
+            <img
+              src="ressources/images/ilias-chebbi-2gpfqhEFVZ8-unsplash.jpg"
+              alt="Un homme assis, écoutant de la musique avec un casque sans fil sur la tête et le téléphone à la main"
+              class="fair-music-grid__image"
+            />
+          </div>
+
+          <div
+            class="fair-music-grid__tile text-tile-2 background-primary text-centered flex"
+          >
+            <h3 class="fair-music-grid__title">
+              Plus de 20 millions de titres
+            </h3>
+            <a class="fair-music-grid__description" href="#"
+              >Explorer notre catalogue</a
+            >
+          </div>
+
+          <div
+            class="fair-music-grid__tile text-tile-3 background-secondary text-centered flex"
+          >
+            <h3 class="fair-music-grid__title">8K+</h3>
+            <p class="fair-music-grid__description">
+              titres ajoutés chaque semaine.
+            </p>
+          </div>
+
+          <div class="fair-music-grid__tile image-tile-2">
+            <img
+              src="ressources/images/jesman-fabio-1zwJqd5cNys-unsplash.jpg"
+              alt="Un homme assis dans son studio de musique, en train de composer"
+              class="fair-music-grid__image"
+            />
+          </div>
+
+          <div class="fair-music-grid__tile text-tile-4 background-700 flex">
+            <h3 class="fair-music-grid__title">
+              Pour tous les <span class="text-accent">artistes</span> et les
+              <span class="text-accent">passionnés</span>.
+            </h3>
+            <p class="fair-music-grid__description">
+              Plongez dans un univers sonore infini et découvrez une expérience
+              musicale inégalée sur FairMusic.
+            </p>
+          </div>
+
+          <div
+            class="fair-music-grid__tile icon-tile-1 background-primary text-centered flex"
+          >
+            <svg
+              class="fair-music-grid__icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22ZM16.2623 7.47719C16.551 7.1802 17.0258 7.17351 17.3228 7.46225L18.5228 8.62892C18.6681 8.77013 18.75 8.96409 18.75 9.16667C18.75 9.36924 18.6681 9.5632 18.5228 9.70441L17.3228 10.8711C17.0258 11.1598 16.551 11.1531 16.2623 10.8561C16.011 10.5977 15.9834 10.2046 16.1762 9.91667H15.8383C15.3265 9.91667 14.9944 9.91744 14.7373 9.94173C14.4955 9.96458 14.3787 10.0042 14.294 10.0509C14.2102 10.0969 14.1178 10.1718 13.9758 10.3582C13.8236 10.5581 13.6532 10.8325 13.3896 11.2598L11.8693 13.7233C11.6282 14.1138 11.4197 14.4518 11.2175 14.7172C11.0002 15.0026 10.7583 15.2488 10.4294 15.4299C10.1015 15.6104 9.76303 15.6843 9.40387 15.7183C9.06785 15.75 8.66434 15.75 8.1946 15.75L6 15.75C5.58579 15.75 5.25 15.4142 5.25 15C5.25 14.5858 5.58579 14.25 6 14.25H8.16171C8.67346 14.25 9.00564 14.2492 9.26275 14.2249C9.50453 14.2021 9.62126 14.1625 9.70604 14.1158C9.78978 14.0697 9.88225 13.9948 10.0242 13.8085C10.1764 13.6086 10.3468 13.3341 10.6104 12.9068L12.1307 10.4434C12.3717 10.0528 12.5803 9.71485 12.7825 9.44943C12.9998 9.16404 13.2417 8.91784 13.5706 8.73678C13.8985 8.55631 14.237 8.48233 14.5961 8.44839C14.9322 8.41663 15.3357 8.41665 15.8054 8.41667L16.1762 8.41667C15.9834 8.12871 16.011 7.73562 16.2623 7.47719ZM9.38531 9.76916C9.30046 9.7531 9.19932 9.75 8.80057 9.75H6C5.58579 9.75 5.25 9.41421 5.25 9C5.25 8.58579 5.58579 8.25 6 8.25H8.80057L8.85843 8.24998C9.17103 8.24981 9.42305 8.24968 9.66421 8.29532C10.2033 8.39734 10.6972 8.66783 11.0694 9.07011C11.2363 9.25039 11.3679 9.4639 11.5278 9.72348L11.5582 9.77278C11.7758 10.1253 11.6664 10.5874 11.3139 10.8049C10.9614 11.0224 10.4993 10.913 10.2818 10.5606C10.0759 10.2269 10.0234 10.1482 9.96852 10.0889C9.81783 9.92609 9.61368 9.81237 9.38531 9.76916ZM12.6861 13.0284C13.0386 12.8109 13.5007 12.9203 13.7182 13.2728C13.9241 13.6064 13.9766 13.6851 14.0315 13.7444C14.1822 13.9072 14.3863 14.021 14.6147 14.0642C14.6995 14.0802 14.8007 14.0833 15.1994 14.0833H16.1762C15.9834 13.7954 16.011 13.4023 16.2623 13.1439C16.551 12.8469 17.0258 12.8402 17.3228 13.1289L18.5228 14.2956C18.6681 14.4368 18.75 14.6308 18.75 14.8333C18.75 15.0359 18.6681 15.2299 18.5228 15.3711L17.3228 16.5377C17.0258 16.8265 16.551 16.8198 16.2623 16.5228C16.011 16.2644 15.9834 15.8713 16.1762 15.5833H15.1994L15.1416 15.5834C14.829 15.5835 14.5769 15.5837 14.3358 15.538C13.7967 15.436 13.3028 15.1655 12.9306 14.7632C12.7637 14.5829 12.6321 14.3694 12.4722 14.1098L12.4418 14.0606C12.2242 13.7081 12.3336 13.246 12.6861 13.0284Z"
+                fill="var(--clr-900)"
+              />
+            </svg>
+            <h3 class="fair-music-grid__title">
+              Playlists et mix personnalisés
+            </h3>
+          </div>
+
+          <div
+            class="fair-music-grid__tile icon-tile-2 background-secondary text-centered flex"
+          >
+            <svg
+              class="fair-music-grid__icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM12 6.25C12.4142 6.25 12.75 6.58579 12.75 7V12.1893L14.4697 10.4697C14.7626 10.1768 15.2374 10.1768 15.5303 10.4697C15.8232 10.7626 15.8232 11.2374 15.5303 11.5303L12.5303 14.5303C12.3897 14.671 12.1989 14.75 12 14.75C11.8011 14.75 11.6103 14.671 11.4697 14.5303L8.46967 11.5303C8.17678 11.2374 8.17678 10.7626 8.46967 10.4697C8.76256 10.1768 9.23744 10.1768 9.53033 10.4697L11.25 12.1893V7C11.25 6.58579 11.5858 6.25 12 6.25ZM8 16.25C7.58579 16.25 7.25 16.5858 7.25 17C7.25 17.4142 7.58579 17.75 8 17.75H16C16.4142 17.75 16.75 17.4142 16.75 17C16.75 16.5858 16.4142 16.25 16 16.25H8Z"
+                fill="var(--clr-100)"
+              />
+            </svg>
+            <h3 class="fair-music-grid__title">
+              Téléchargement hors connexion
+            </h3>
+          </div>
+
+          <div
+            class="fair-music-grid__tile icon-tile-3 background-secondary text-centered flex"
+          >
+            <svg
+              class="fair-music-grid__icon"
+              viewBox="0 0 24 24"
+              fill="var(--clr-100)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.84453 3.84453C2.71849 4.97056 2.71849 6.79623 3.84453 7.92226L5.43227 9.51C5.44419 9.49622 5.45669 9.48276 5.46978 9.46967L9.46978 5.46967C9.48284 5.45662 9.49625 5.44415 9.50999 5.43226L7.92226 3.84453C6.79623 2.71849 4.97056 2.71849 3.84453 3.84453Z"
+                fill=""
+              />
+              <path
+                d="M10.5679 6.49012C10.556 6.50386 10.5435 6.51728 10.5304 6.53033L6.53044 10.5303C6.51735 10.5434 6.5039 10.5559 6.49011 10.5678L16.0777 20.1555C17.2038 21.2815 19.0294 21.2815 20.1555 20.1555C21.2815 19.0294 21.2815 17.2038 20.1555 16.0777L10.5679 6.49012Z"
+                fill=""
+              />
+              <path
+                d="M16.1 2.30719C16.261 1.8976 16.8385 1.8976 16.9994 2.30719L17.4298 3.40247C17.479 3.52752 17.5776 3.62651 17.7022 3.67583L18.7934 4.1078C19.2015 4.26934 19.2015 4.849 18.7934 5.01054L17.7022 5.44252C17.5776 5.49184 17.479 5.59082 17.4298 5.71587L16.9995 6.81115C16.8385 7.22074 16.261 7.22074 16.1 6.81116L15.6697 5.71587C15.6205 5.59082 15.5219 5.49184 15.3973 5.44252L14.3061 5.01054C13.898 4.849 13.898 4.26934 14.3061 4.1078L15.3973 3.67583C15.5219 3.62651 15.6205 3.52752 15.6697 3.40247L16.1 2.30719Z"
+                fill=""
+              />
+              <path
+                d="M19.9672 9.12945C20.1281 8.71987 20.7057 8.71987 20.8666 9.12945L21.0235 9.5288C21.0727 9.65385 21.1713 9.75284 21.2959 9.80215L21.6937 9.95965C22.1018 10.1212 22.1018 10.7009 21.6937 10.8624L21.2959 11.0199C21.1713 11.0692 21.0727 11.1682 21.0235 11.2932L20.8666 11.6926C20.7057 12.1022 20.1281 12.1022 19.9672 11.6926L19.8103 11.2932C19.7611 11.1682 19.6625 11.0692 19.5379 11.0199L19.14 10.8624C18.732 10.7009 18.732 10.1212 19.14 9.95965L19.5379 9.80215C19.6625 9.75284 19.7611 9.65385 19.8103 9.5288L19.9672 9.12945Z"
+                fill=""
+              />
+              <path
+                d="M5.1332 15.3072C5.29414 14.8976 5.87167 14.8976 6.03261 15.3072L6.18953 15.7065C6.23867 15.8316 6.33729 15.9306 6.46188 15.9799L6.85975 16.1374C7.26783 16.2989 7.26783 16.8786 6.85975 17.0401L6.46188 17.1976C6.33729 17.2469 6.23867 17.3459 6.18953 17.471L6.03261 17.8703C5.87167 18.2799 5.29414 18.2799 5.1332 17.8703L4.97628 17.471C4.92714 17.3459 4.82852 17.2469 4.70393 17.1976L4.30606 17.0401C3.89798 16.8786 3.89798 16.2989 4.30606 16.1374L4.70393 15.9799C4.82852 15.9306 4.92714 15.8316 4.97628 15.7065L5.1332 15.3072Z"
+                fill=""
+              />
+            </svg>
+            <h3 class="fair-music-grid__title">Algorithme intelligent</h3>
+          </div>
+
+          <div
+            class="fair-music-grid__tile icon-tile-4 background-primary text-centered flex"
+          >
+            <svg
+              class="fair-music-grid__icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM6.75 8C6.75 7.58579 6.41421 7.25 6 7.25C5.58579 7.25 5.25 7.58579 5.25 8V15.619C5.25 16.0333 5.58579 16.369 6 16.369C6.41421 16.369 6.75 16.0333 6.75 15.619V12.75H10.0648V15.619C10.0648 16.0333 10.4006 16.369 10.8148 16.369C11.229 16.369 11.5648 16.0333 11.5648 15.619V8C11.5648 7.58579 11.229 7.25 10.8148 7.25C10.4006 7.25 10.0648 7.58579 10.0648 8V11.25H6.75V8ZM16.0472 7.24999L16.1111 7.25L16.175 7.24999C16.5604 7.24988 16.8396 7.2498 17.0849 7.2884C18.0575 7.44147 18.964 8.06957 19.2089 9.04367C19.2693 9.28415 19.269 9.55224 19.2686 9.83606L19.2685 9.90476V13.7143L19.2686 13.783C19.269 14.0668 19.2693 14.3349 19.2089 14.5754C19.1655 14.7478 19.1015 14.9094 19.0199 15.0594L19.4654 15.4118C19.7902 15.6688 19.8452 16.1405 19.5882 16.4654C19.3312 16.7902 18.8595 16.8452 18.5346 16.5882L17.8958 16.0827C17.6405 16.2028 17.3655 16.2865 17.0849 16.3306C16.8396 16.3693 16.5604 16.3692 16.175 16.3691L16.1111 16.369L16.0472 16.3691C15.6619 16.3692 15.3826 16.3693 15.1373 16.3306C14.1647 16.1776 13.2582 15.5495 13.0133 14.5754C12.9529 14.3349 12.9533 14.0668 12.9536 13.783L12.9537 13.7143V9.90476L12.9536 9.83607C12.9533 9.55225 12.9529 9.28415 13.0133 9.04367C13.2582 8.06957 14.1647 7.44147 15.1373 7.2884C15.3826 7.2498 15.6619 7.24988 16.0472 7.24999ZM17.7656 14.0669L17.5394 13.888C17.2146 13.631 16.7429 13.686 16.4859 14.0108C16.2852 14.2645 16.2748 14.6077 16.4345 14.8683C16.3471 14.8689 16.2412 14.869 16.1111 14.869C15.635 14.869 15.4839 14.8667 15.3705 14.8489C14.8151 14.7615 14.5271 14.4445 14.4681 14.2097C14.4594 14.1751 14.4537 14.1131 14.4537 13.7143V9.90476C14.4537 9.50598 14.4594 9.44399 14.4681 9.40939C14.5271 9.17452 14.8151 8.85757 15.3705 8.77016C15.4839 8.75231 15.635 8.75 16.1111 8.75C16.5873 8.75 16.7383 8.75231 16.8517 8.77016C17.4071 8.85757 17.6951 9.17452 17.7541 9.40939C17.7628 9.44399 17.7685 9.50598 17.7685 9.90476V13.7143C17.7685 13.8861 17.7675 13.9954 17.7656 14.0669Z"
+                fill="var(--clr-900)"
+              />
+            </svg>
+            <h3 class="fair-music-grid__title">Très haute qualité audio</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== Leading fair traid music plateform ====== -->
+      <section id="leading-fair-trade-music-plateform">
+        <h2 class="section-title">
+          La première plateforme <span class="text-accent">équitable</span>
+        </h2>
+
+        <div class="container grid leading-fair-trade-music-plateform__grid">
+          <div class="fair-remuneration-artists grid">
+            <div class="grid__text">
+              <h3 class="fair-music-grid__title">
+                Rétribution <span class="text-accent">équitable</span> pour nos
+                artistes.
+              </h3>
+              <p class="fair-music-grid__description">
+                Chez FairMusic, nous croyons en la valeur du travail des
+                artistes. C'est pourquoi nous nous engageons à offrir une
+                rémunération juste et transparente à tous les artistes présents
+                sur notre plateforme. Chaque écoute compte et contribue à
+                soutenir leur créativité et leur carrière musicale.
+              </p>
+            </div>
+
+            <div class="grid__image">
+              <img src="ressources/images/musician-1658887_1280.jpg" alt="Homme aux longs cheveux, chantant jouant de la guitare sur scène" />
+            </div>
+          </div>
+
+          <div class="accessible-to-all grid">
+            <div class="grid__image">
+              <img
+                src="ressources/images/viktor-forgacs-B88PgQXS4qg-unsplash.jpg"
+                alt="Un téléphone montrant l'application musicale en fonctionnement, est posé près d'un casque audio sur une table noire."
+              />
+            </div>
+            <div class="grid__text">
+              <h3 class="fair-music-grid__title">
+                <span class="text-accent">Accessible</span> pour tous.
+              </h3>
+              <p class="fair-music-grid__description">
+                Nous sommes également conscients de l'importance de rendre la
+                musique accessible à tous les passionnés. C'est pourquoi nous
+                nous efforçons de proposer un prix abordable pour nos
+                utilisateurs. Nous voulons que chacun puisse profiter pleinement
+                de notre plateforme sans se soucier de contraintes financières.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== Offers and subscriptions ====== -->
+      <section id="offers-and-subscriptions" class="container">
+        <h2 class="section-title">Nos offres et abonnements</h2>
+
+        <div class="cards">
+          <div class="card background-700 text-centered">
+            <div class="card__header background-primary">
+              <h3 class="card__header-title uppercase bold">Essentiel</h3>
+            </div>
+            <ul class="card__perks">
+              <li class="card__perk">Accès illimité sur tous vos appareils</li>
+              <li class="card__perk">Sans publicité, écoutez en illimité</li>
+              <li class="card__perk">Recommandations personnalisées intelligente</li>
+            </ul>
+            <div class="card__footer">
+              <p class="card__price bold">6,99 / mois</p>
+              <a href="#" class="button background-primary">Souscrire à cette offre</a>
+            </div>
+          </div>
+
+          <div class="card background-700 text-centered">
+            <div class="card__header background-primary">
+              <h3 class="card__header-title uppercase bold">Premium</h3>
+            </div>
+            <ul class="card__perks">
+              <li class="card__perk">Tous les avantages de l'offre <span class="bold uppercase">Essentiel</span></li>
+              <li class="card__perk">Téléchargement des titres hors-ligne</li>
+              <li class="card__perk">Qualité audio studio <span class="card__perk--specification">(FLAC 24-Bit jusqu'à 192 kHz)</span></li>
+            </ul>
+            <div class="card__footer">
+              <p class="card__price bold">11,99 / mois</p>
+              <a href="#" class="button background-primary">Souscrire à cette offre</a>
+            </div>
+          </div>
+
+          <div class="card background-700 text-centered">
+            <div class="card__header background-primary">
+              <h3 class="card__header-title uppercase bold">VIP</h3>
+            </div>
+            <ul class="card__perks">
+              <li class="card__perk">Tous les avantages de l'offre <span class="bold uppercase">Premium</span></li>
+              <li class="card__perk">Tarifs préférentiels sur les concerts et événements spéciaux</li>
+              <li class="card__perk">Sessions de groupe</li>
+            </ul>
+            <div class="card__footer">
+              <p class="card__price bold">15,99 / mois</p>
+              <a href="#" class="button background-primary">Souscrire à cette offre</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== Desktop download FairMusic CTA ====== -->
+      <section id="desktop-download-call-to-action" class="background-900">
+        <div class="container text-centered">
+          <svg class="download-call-to-action__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 17C5.17157 17 3.75736 17 2.87868 16.1213C2.30938 15.552 2.10893 14.7579 2.03835 13.5H21.9616C21.8911 14.7579 21.6906 15.552 21.1213 16.1213C20.2426 17 18.8284 17 16 17H12.75V21H16C16.4142 21 16.75 21.3358 16.75 21.75C16.75 22.1642 16.4142 22.5 16 22.5H8C7.58579 22.5 7.25 22.1642 7.25 21.75C7.25 21.3358 7.58579 21 8 21H11.25V17H8Z" fill="var(--clr-100)"/>
+          <path d="M10 2H14C17.7712 2 19.6569 2 20.8284 3.17157C22 4.34315 22 6.22876 22 10V11C22 11.5516 22 12.0494 21.9935 12.5H2.00652C2 12.0494 2 11.5516 2 11V10C2 6.22876 2 4.34315 3.17157 3.17157C4.34315 2 6.22876 2 10 2Z" fill="var(--clr-100)"/>
+          </svg>
+          <h2 class="download-call-to-action__title bold">Télécharger FairMusic.</h2>
+          <p class="download-call-to-action__description">Toute la musique disponible sur votre appareil.</p>
+          <a href="#" class="button download-call-to-action__button background-primary">Télécharger</a>
+        </div>
+      </section>
+
+      <!-- ====== Mobile download FairMusic CTA ====== -->
+      <section id="mobile-download-call-to-action" class="background-primary">
+        <div class="container text-centered">
+          <svg class="download-call-to-action__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2H10C6.22876 2 4.34315 2 3.17157 3.17157C2 4.34315 2 6.22876 2 10V11C2 11.5516 2 12.0494 2.00652 12.5H12.6017C12.7054 11.8207 12.9376 11.1127 13.5251 10.5251C14.1432 9.90708 14.8946 9.68219 15.6056 9.5866C16.2512 9.4998 17.0449 9.49989 17.9105 9.49999H18.0895C18.9551 9.49989 19.7488 9.4998 20.3944 9.5866C20.9315 9.65881 21.4917 9.80481 22 10.1383V10C22 6.22876 22 4.34315 20.8284 3.17157C19.6569 2 17.7712 2 14 2Z" fill="var(--clr-900)"/>
+            <path d="M2.87868 16.1213C3.75736 17 5.17157 17 8 17H11.25V21H8C7.58579 21 7.25 21.3358 7.25 21.75C7.25 22.1642 7.58579 22.5 8 22.5H13.5505L13.5251 22.4749C12.9071 21.8568 12.6822 21.1054 12.5866 20.3944C12.4998 19.7488 12.4999 18.9551 12.5 18.0895V14.9105C12.4999 14.4116 12.4999 13.9365 12.5165 13.5H2.03835C2.10893 14.7579 2.30938 15.552 2.87868 16.1213Z" fill="var(--clr-900)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 15V18C22 19.8856 22 20.8284 21.4142 21.4142C20.8284 22 19.8856 22 18 22C16.1144 22 15.1716 22 14.5858 21.4142C14 20.8284 14 19.8856 14 18V15C14 13.1144 14 12.1716 14.5858 11.5858C15.1716 11 16.1144 11 18 11C19.8856 11 20.8284 11 21.4142 11.5858C22 12.1716 22 13.1144 22 15ZM16.25 20C16.25 19.5858 16.5858 19.25 17 19.25H19C19.4142 19.25 19.75 19.5858 19.75 20C19.75 20.4142 19.4142 20.75 19 20.75H17C16.5858 20.75 16.25 20.4142 16.25 20Z" fill="var(--clr-900)"/>
+            </svg>
+            <h2 class="download-call-to-action__title bold">
+              Toutes vos musiques sur votre mobile et votre tablette.
+            </h2>
+            <p class="download-call-to-action__description">Accédez à votre musique, partout et en illimité.</p>
+            <div class="download-call-to-action__buttons">
+              <a href="https://www.apple.com/fr/store" target="_blank" class="download-call-to-action__button">
+                <img src="ressources/svg/Apple_Store_badge_FR.svg" alt="Télécharger l'application mobile sur l'Apple Store">
+              </a>
+              <a href="https://play.google.com/store/" target="_blank" class="download-call-to-action__button">
+                <img src="ressources/svg/Google_Play_Store_badge_FR.svg" alt="Télécharger l'application mobile sur Google Play">
+              </a>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer class="background-900">
+      <div class="container">
+        <h2 class="uppercase bold text-centered">Fair<span class="text-accent">Music</span></h2>
+
+        <div class="footer__links-container">
+          <div class="footer__links">
+            <h3 class="footer__subtitle">FairMusic</h3>
+            <ul class="footer__links-list fairmusic remove-list-style">
+              <li class="footer__link">Découvrez FairMusic</li>
+              <li class="footer__link">Plateforme équitable</li>
+              <li class="footer__link">Nos offres et abonnements</li>
+              <li class="footer__link">Télécharger l'application</li>
+              <li class="footer__link">Assistance</li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <h3 class="footer__subtitle">Qui sommes-nous ?</h3>
+            <ul class="footer__links-list about-us remove-list-style">
+              <li class="footer__link">A propos</li>
+              <li class="footer__link">Carrières</li>
+              <li class="footer__link">Offres d'emploi</li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <h3 class="footer__subtitle">Légal</h3>
+            <ul class="footer__links-list legal remove-list-style">
+              <li class="footer__link">Conditions générales d'utilisation</li>
+              <li class="footer__link">Politique de protection des données</li>
+              <li class="footer__link">Cookies</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__details">
+          <div class="payment-methods">
+            <img src="ressources/svg/visa-icon.svg" alt="Icône VISA">
+            <img src="ressources/svg/mastercard-icon.svg" alt="Icône MasterCard">
+            <img src="ressources/svg/paypal-icon.svg" alt="Icône PayPal">
+          </div>
+          <div class="contact">
+            <p>&copy; 2023 FairMusic - 5 rue du Soleil, 75001 Paris, France</p>
+          </div>
+        </div>
+
+        <div class="footer__medias">
+          <img src="ressources/svg/facebook-logo.svg" alt="Icône Facebook">
+          <img src="ressources/svg/twitter-logo-black-outline-20846.svg" alt="Icône X (Twitter)">
+          <img src="ressources/svg/instagram-logo.svg" alt="Icône Instagram">
+          <img src="ressources/svg/youtube-icon.svg" alt="Icône YouTube">
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
