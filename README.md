@@ -10,7 +10,7 @@ Welcome to the Music Streaming Platform project! This is a fictitious static web
 - [Lighthouse report](#lighthouse-report)
 
 ## Links
-- Live view of the website : [Click here]()
+- Live view of the website : [Click here](https://johanchereau.github.io/fairmusic-showcase/)
 
 ## Screenshots
 ### Mobile view
