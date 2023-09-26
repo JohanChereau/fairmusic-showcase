@@ -357,12 +357,14 @@ svg {
 }
 
 .fair-music-grid__tile:has(> .fair-music-grid__title) {
-  padding: var(--grid-padding, 1.5rem 1rem);
+  padding: 2.5rem 2rem;
 }
 
 .fair-music-grid__title {
   font-size: var(--fs-700);
   font-weight: var(--fw-700);
+  margin: 0;
+  margin-bottom: .5em;
 }
 
 .fair-music-grid__image {
@@ -371,7 +373,7 @@ svg {
 
 .fair-music-grid__icon {
   margin: 0 auto;
-  width: clamp(2rem, 20vw, 6rem);
+  width: clamp(2rem, 20vw, 4rem);
 }
 
 .fair-music-grid__tile > .fair-music-grid__icon + .fair-music-grid__title {
@@ -448,9 +450,13 @@ svg {
   }
 }
 
-@media screen and (max-width: 70em) {
+@media screen and (max-width: 55em) {
+  .fair-music-grid {
+    max-width: 400px;
+  }
+  
   .fair-music-grid__tile:has(> .fair-music-grid__title) {
-    --grid-padding: 3rem 2rem;
+    padding: 2rem 1.3rem;
   }
 }
 
@@ -537,7 +543,7 @@ svg {
   gap: 1rem;
   flex-shrink: 0;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   box-shadow: 5px 3px 10px var(--clr-900);
   border-radius: 10px;
@@ -587,19 +593,20 @@ svg {
 }
 
 .card__footer > a {
-  padding: 0.8em 1.6em;
+  padding: 0.6em 1.3em;
 }
 
 @media screen and (min-width: 70em) {
   .card__header {
-    height: 260px;
+    height: 170px;
   }
 }
 
-@media screen and (min-width: 85em) {
+@media screen and (min-width: 82em) {
   .cards {
     flex-direction: row;
     justify-content: center;
+    align-items: stretch;
   }
 }
 
@@ -684,17 +691,18 @@ footer {
 
 /* Visa */
 .payment-methods > img:nth-child(1){
-  width: 70px;
+  width: 50px;
 }
 
 /* MasterCard */
 .payment-methods > img:nth-child(2){
-  width: 55px;
+  width: 35px;
 }
 
 /* Paypal */
 .payment-methods > img:nth-child(3){
-  width: 90px;
+  width: 70px;
+  transform: translateY(5px);
 }
 
 .footer__medias {
@@ -716,19 +724,20 @@ footer {
 }
 
 .footer__medias > img:nth-child(1){
-  width: 40px;
+  width: 30px;
 }
 
 .footer__medias > img:nth-child(2){
-  width: 40px;
+  width: 30px;
 }
 
 .footer__medias > img:nth-child(3){
-  width: 42px;
+  width: 32px;
 }
 
 .footer__medias > img:nth-child(4){
-  width: 48px;
+  width: 38px;
+  transform: translateY(2px);
 }
 
 @media screen and (min-width: 70em) {
@@ -752,11 +761,11 @@ footer {
 @media screen and (min-width: 70em) {
   :root {
     --fs-900: 2.9rem;
-    --fs-800: 2.8125rem;
-    --fs-700: 2.25rem;
-    --fs-600: 1.5rem;
-    --fs-500: 1.4rem;
-    --fs-400: 1.3rem;
+    --fs-800: 2.4125rem;
+    --fs-700: 2.15rem;
+    --fs-600: 1.4rem;
+    --fs-500: 1.3rem;
+    --fs-400: 1.2rem;
     --fs-300: 1.1rem;
 
   }
